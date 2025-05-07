@@ -3,46 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Espírito Livre - Templo Vivo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <title>Consagração Visual - Espírito Livre</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
+      background-color: #f7f4ef;
+      color: #2e2a25;
     }
-    .hero {
-      background-image: url('artwork.png');
-      background-size: cover;
-      background-position: center;
+    header {
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') center/cover no-repeat;
       height: 100vh;
+      color: white;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 20px;
+      padding: 2rem;
     }
-    .hero h1 {
-      font-family: 'Fredericka the Great', cursive;
-      font-size: 3em;
-      color: #00fff2;
-      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2;
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
-    .hero p {
-      font-size: 1.2em;
-      margin-top: 20px;
-      max-width: 800px;
+    header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+    }
+    header a {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #865439;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    section p, li {
+      font-size: 1.1rem;
       line-height: 1.6;
-      color: #e0e0e0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    input, textarea, select, button {
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #865439;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    footer {
+      background-color: #2e2a25;
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>Transforme sua Casa Espiritual em um Verdadeiro Templo Vivo</h1>
-    <p>Transformamos a essência da sua mensagem em uma Identidade Visual Única, Uniformes Exclusivos e Hinos Sagrados para Institutos que se tornam verdadeiros Instrumentos de Poder.</p>
+  <header>
+    <h1>Transforme sua Casa Espiritual em um Templo Vivo</h1>
+    <p>Canalizamos Identidades Visuais, Uniformes Rituais e Hinos Sagrados para Institutos que Curam com Amor e Verdade.</p>
+    <a href="#form">Quero consagrar minha casa agora</a>
+  </header>
+
+  <section>
+    <h2>🌿 O Chamado</h2>
+    <p>Toda casa de cura guarda um espírito. Um símbolo. Uma canção. Uma veste que consagra os guerreiros da luz. O Espírito Livre nasceu para honrar essa verdade.</p>
+    <ul>
+      <li>Uniformes Sagrados com identidade ancestral</li>
+      <li>Banners rituais em tecido, símbolo de poder</li>
+      <li>Hinos Musicais Canalizados para elevar e ativar</li>
+    </ul>
   </section>
+
+  <section>
+    <h2>✨ Pedido de Consagração</h2>
+    <form id="form">
+      <input type="text" placeholder="Nome do Instituto ou Casa Espiritual" required>
+      <input type="text" placeholder="Responsável Espiritual" required>
+      <input type="text" placeholder="Cidade e Estado" required>
+      <input type="text" placeholder="Telefone com WhatsApp" required>
+      <input type="url" placeholder="Instagram ou Site">
+      <input type="number" placeholder="Nº de Amparadores na Casa">
+      <textarea rows="4" placeholder="O que a sua casa representa para você e para as pessoas?" required></textarea>
+      <label>Você deseja:</label>
+      <select required>
+        <option>Todos os itens</option>
+        <option>Uniformes sagrados personalizados</option>
+        <option>Banner ritual em tecido (2m)</option>
+        <option>Hino musical canalizado</option>
+      </select>
+      <textarea rows="3" placeholder="Como você imagina a identidade visual do seu templo?"></textarea>
+      <input type="text" placeholder="Data especial para consagração (se houver)">
+      <input type="text" placeholder="Como você nos conheceu?">
+      <select required>
+        <option>Desejo contato via WhatsApp</option>
+        <option>Desejo contato por ligação</option>
+      </select>
+      <button type="submit">Enviar meu pedido de consagração</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contato direto: <a href="https://wa.me/SEUNUMEROAQUI" style="color: #fff; text-decoration: underline;">WhatsApp Espírito Livre</a></p>
+    <p>Siga no Instagram: <a href="https://instagram.com/espiritolivre.store" style="color: #fff; text-decoration: underline;">@espiritolivre.store</a></p>
+    <p><em>“Toda casa de cura merece vestir sua alma.”</em></p>
+  </footer>
 </body>
 </html>
